@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontius · Il gestionale con intelligenza artificiale per le gare d'appalto</title>
+  <meta name="description" content="Frontius trova le gare adatte alla tua impresa, legge bandi e capitolati, segnala requisiti, penali e contraddizioni, ti mostra con quali ribassi si sono vinte gare simili e prepara le buste da rivedere. Tu decidi e firmi.">
+    <meta name="robots" content="noindex, nofollow">
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    // Prima del disegno: segnala che JavaScript c'è e se il movimento va ridotto.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var ridotto = /[?&]movimento=ridotto\b/.test(location.search) ||
+        (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+      if (ridotto) d.classList.add('movimento-ridotto');
+      // Se lo script della pagina non parte, mostra tutto nello stato finale.
+      setTimeout(function () { if (!window.__frontius) d.classList.add('movimento-ridotto'); }, 4000);
+    })();
+  </script>
+
+  <script type="module" crossorigin src="./assets/index-Bd33FrCX.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/calcoli-CBQlTHow.js">
+  <link rel="stylesheet" crossorigin href="./assets/calcoli-6c4dFeu5.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-CBRuWxay.css">
+</head>
+<body>
+    <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <header class="testata">
+    <div class="testata__interno">
+      <a class="logo" href="#inizio" aria-label="Frontius, torna all'inizio">
+        <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+      </a>
+      <nav class="menu" aria-label="Menu principale">
+        <ul class="menu__lista">
+          <li><a class="menu__voce" href="#come-funziona">Come funziona</a></li>
+          <li><a class="menu__voce" href="#ribasso">Ribasso</a></li>
+          <li><a class="menu__voce" href="#domande">Domande</a></li>
+          <li>
+            <details class="menu__gruppo">
+              <summary class="menu__voce">Risorse<svg class="menu__freccia" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></summary>
+              <div class="menu__tendina">
+                <p class="menu__titolo">Risorse per le gare</p>
+                <ul class="menu__voci">
+                  <li><a href="subappalto.html" data-voce="subappalto">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="10" height="10" rx="2"/><rect x="11" y="10.5" width="10" height="10" rx="2"/></svg>
+                    <span><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></span>
+                  </a></li>
+                  <li><a href="normativa.html" data-voce="normativa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></svg>
+                    <span><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></span>
+                  </a></li>
+                  <li><a href="glossario.html" data-voce="glossario">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19M9 7.5h6"/></svg>
+                    <span><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></span>
+                  </a></li>
+                  <li><a href="categorie-soa.html" data-voce="categorie-soa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M17 13.5v7M13.5 17h7"/></svg>
+                    <span><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></span>
+                  </a></li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <a class="pulsante pulsante--piccolo testata__cta" href="#demo">Richiedi una demo</a>
+
+      <details class="menu-mobile">
+        <summary class="menu-mobile__apri"><span class="menu-mobile__icona" aria-hidden="true"><i></i><i></i></span>Menu</summary>
+        <nav class="menu-mobile__pannello" aria-label="Menu principale">
+          <a class="menu-mobile__voce" href="#come-funziona">Come funziona</a>
+          <a class="menu-mobile__voce" href="#ribasso">Ribasso</a>
+          <a class="menu-mobile__voce" href="#domande">Domande</a>
+          <details class="menu-mobile__gruppo">
+            <summary>Risorse</summary>
+            <ul>
+              <li><a href="subappalto.html" data-voce="subappalto"><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></a></li>
+              <li><a href="normativa.html" data-voce="normativa"><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></a></li>
+              <li><a href="glossario.html" data-voce="glossario"><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></a></li>
+              <li><a href="categorie-soa.html" data-voce="categorie-soa"><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></a></li>
+            </ul>
+          </details>
+          <a class="pulsante pulsante--pieno" href="#demo">Richiedi una demo</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+
+  <main id="contenuto">
+
+    <!-- 1 · Apertura -->
+    <section class="apertura apertura--scura" id="inizio">
+      <div class="contenitore apertura__griglia">
+        <div class="apertura__testo">
+          <p class="occhiello rivela">Gestionale con intelligenza artificiale per le gare di lavori</p>
+          <h1 class="apertura__titolo rivela"><span>E se il tuo ufficio gare</span> <span>non dormisse mai?</span></h1>
+          <p class="apertura__sotto rivela">Frontius trova le gare adatte alla tua impresa, legge bandi e capitolati, ti dice con che ribasso si sono vinte gare simili e prepara le buste da rivedere. Tu decidi e firmi.</p>
+          <div class="azioni rivela">
+            <a class="pulsante pulsante--chiaro" href="#demo">Richiedi una demo</a>
+            <a class="collegamento collegamento--chiaro" href="#come-funziona">Guarda come funziona</a>
+          </div>
+          <p class="categorie-riga rivela"><span>Copre le categorie SOA, generali e specialistiche.</span> <a class="collegamento collegamento--chiaro" href="categorie-soa.html">Vedi le categorie</a></p>
+        </div>
+        <div class="eroe rivela">
+          <figure class="vetrina eroe__principale">
+            <div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="./img/trova-elenco-v4.jpg" width="1800" height="1125" alt="Elenco delle gare adatte all'impresa nel gestionale Frontius">
+          </figure>
+          <figure class="vetrina eroe__mappa">
+            <img src="./img/trova-mappa-v4.jpg" width="1800" height="1125" alt="Mappa d'Italia con le gare adatte nel gestionale Frontius">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Lunedì mattina -->
+    <section class="sezione problema" id="perche">
+      <div class="contenitore">
+        <header class="intestazione rivela">
+          <p class="pillola">Una mattina in ufficio gare</p>
+          <h2>Stessa scrivania. Due modi di cominciare la settimana.</h2>
+        </header>
+        <div class="giorno">
+          <article class="giorno__lato giorno__lato--prima rivela">
+            <h3>Come si fa oggi</h3>
+            <ol>
+              <li><time>8:00</time>Apri i portali uno dopo l'altro e cerchi le gare nuove.</li>
+              <li><time>9:30</time>Scarichi i bandi e scorri decine di pagine per capire se ti riguardano.</li>
+              <li><time>11:00</time>Nel dubbio le tieni tutte. Intanto in cantiere ti cercano.</li>
+              <li><time>Sera</time>Scopri che una gara giusta è scaduta ieri.</li>
+            </ol>
+          </article>
+          <article class="giorno__lato giorno__lato--dopo rivela">
+            <h3>Con Frontius</h3>
+            <ol>
+              <li><time>8:00</time>Apri l'elenco: solo le gare adatte a te, ognuna con il perché.</li>
+              <li><time>8:10</time>Una pagina per gara: requisiti, rischi, ribasso tipico, fonti.</li>
+              <li><time>8:30</time>Scegli le due che valgono. Le bozze delle buste partono da qui.</li>
+              <li><time>Sempre</time>Scadenze e proroghe controllate al posto tuo.</li>
+            </ol>
+          </article>
+        </div>
+        <p class="giorno__nota">Esempio di giornata, per far capire la differenza: i tempi cambiano da impresa a impresa.</p>
+      </div>
+    </section>
+
+    <!-- 2b · Quello che gli altri non fanno -->
+    <section class="sezione forza" id="punti-forza">
+      <div class="contenitore">
+        <header class="intestazione rivela">
+          <p class="pillola">Cosa trovi solo qui</p>
+          <h2>Non solo l'elenco delle gare. Anche cosa fare.</h2>
+        </header>
+        <div class="forza__righe">
+          <article class="forza__riga rivela">
+            <div class="forza__testo"><h3>Guarda l'Italia dei tuoi lavori</h3><p>Ogni gara adatta a te è un punto sulla mappa: dove sta, a quanti chilometri dai tuoi cantieri, di che importo. Ti muovi con le dita, come su Google Maps.</p></div>
+            <figure class="vetrina"><div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div><img src="./img/trova-mappa-v4.jpg" alt="La mappa d'Italia con le gare adatte alla tua impresa" loading="lazy"></figure>
+          </article>
+          <article class="forza__riga forza__riga--inverso rivela">
+            <div class="forza__testo"><h3>Offri con i numeri in mano</h3><p>Con che ribasso si sono vinte gare come questa: la fascia in cui cade la metà delle vittorie, con il numero di gare su cui è calcolata. Dato ANAC, non un'opinione.</p></div>
+            <figure class="vetrina"><div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div><img src="./img/valuta-scheda-v4.jpg" alt="La scheda gara con la forbice di ribasso" loading="lazy"></figure>
+          </article>
+          <article class="forza__riga rivela">
+            <div class="forza__testo"><h3>Entra nella testa di chi compra</h3><p>Per ogni ente: quante gare ha fatto, con che ribassi, chi vince di solito, come spende. Arrivi alla gara sapendo già con chi hai a che fare.</p></div>
+            <figure class="vetrina"><div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div><img src="./img/enti-concorrenti-v4.jpg" alt="La pagina di un ente con ribassi e vincitori" loading="lazy"></figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · I 15 controlli -->
+    <section class="sezione controlli" id="scheda">
+      <div class="contenitore">
+        <header class="intestazione rivela">
+          <p class="pillola">La scheda della gara</p>
+          <h2>Prima di proporti una gara, la controlliamo su 15 punti.</h2>
+          <p class="intestazione__sotto">Sai prima se la gara ti conviene, non solo se puoi farla.</p>
+        </header>
+
+        <div class="controlli__griglia">
+          <ol class="gruppi" aria-label="I 15 controlli">
+            <li class="gruppo"><h3>Il lavoro</h3>
+              <ol class="voci">
+                <li><span class="pallino">1</span>Tipo di lavori</li>
+                <li><span class="pallino">2</span>Territorio</li>
+                <li><span class="pallino">3</span>Dimensione della commessa</li>
+              </ol></li>
+            <li class="gruppo gruppo--evidenza"><h3>Cassa e pagamenti</h3>
+              <ol class="voci">
+                <li><span class="pallino">4</span>Anticipazione del prezzo</li>
+                <li><span class="pallino">5</span>Primo incasso e SAL</li>
+                <li><span class="pallino">6</span>Termini di pagamento</li>
+                <li><span class="pallino">7</span>Trattenute e saldo</li>
+                <li><span class="pallino">8</span>Garanzie e assicurazioni</li>
+                <li><span class="pallino">9</span>Liquidità necessaria</li>
+              </ol></li>
+            <li class="gruppo"><h3>Prezzo e contratto</h3>
+              <ol class="voci">
+                <li><span class="pallino">10</span>Forma del prezzo</li>
+                <li><span class="pallino">11</span>Prezzi e revisione</li>
+              </ol></li>
+            <li class="gruppo"><h3>Esecuzione</h3>
+              <ol class="voci">
+                <li><span class="pallino">12</span>Avvio e durata</li>
+                <li><span class="pallino">13</span>Persone, mezzi e materiali</li>
+                <li><span class="pallino">14</span>Vincoli e penali</li>
+              </ol></li>
+            <li class="gruppo"><h3>Partecipazione</h3>
+              <ol class="voci">
+                <li><span class="pallino">15</span>Impegno per partecipare</li>
+              </ol></li>
+          </ol>
+
+          <article class="finestra esempio-cassa" aria-label="Esempio: la cassa">
+            <div class="finestra__barra">
+              <span class="finestra__punti" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="etichetta">Esempio</span>
+            </div>
+            <div class="esempio-cassa__corpo">
+              <h3 class="esempio-cassa__titolo">Strade comunali, lotto 2</h3>
+              <ul class="motivi">
+                <li class="motivo"><span class="simbolo simbolo--ok" aria-hidden="true">✓</span><span>Anticipo: 20% del contratto, entro 15 giorni dall'inizio dei lavori, con garanzia. Si recupera un po' a ogni pagamento.<small class="fonte">Capitolato, art. 25</small></span></li>
+                <li class="motivo"><span class="simbolo simbolo--ok" aria-hidden="true">✓</span><span>Pagamenti: uno ogni 200.000 € di lavori, entro 30 giorni.<small class="fonte">Capitolato, art. 27</small></span></li>
+                <li class="motivo motivo--stima"><span class="simbolo simbolo--stima" aria-hidden="true">≈</span><span>Cassa necessaria, stima: anche con l'anticipo, fino a circa <b class="cifra-cassa" data-fino="190.000">190.000 €</b>. Il picco arriva verso la fine, quando l'anticipo è quasi tutto recuperato.</span></li>
+              </ul>
+              <p class="ipotesi">Ipotesi: ribasso 12,5%, lavori costanti in 180 giorni, costi pari al 90% dei lavori, pagamento 30 giorni dopo ogni stato di avanzamento.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="chiusura rivela">La scheda completa di ogni gara te la mostriamo nella demo.</p>
+      </div>
+    </section>
+
+    <!-- 3 · Il gestionale, in quattro passi -->
+    <section class="sezione" id="come-funziona">
+      <div class="contenitore">
+        <header class="intestazione rivela">
+          <p class="pillola">Il gestionale</p>
+          <h2>Una gara, dall'avviso alla busta. Senza cambiare programma.</h2>
+          <p class="intestazione__sotto">Segui una gara dalla prima segnalazione fino alla busta pronta. Le carte le fa Frontius, le scelte e la firma restano tue.</p>
+        </header>
+        <div class="gtab" data-passi>
+<div class="gtab__lista" role="tablist" aria-label="I quattro passi">
+<button type="button" role="tab" class="gtab__bottone" id="gt0" aria-controls="gp0" aria-selected="true"><span>1</span>Ti arriva</button>
+<button type="button" role="tab" class="gtab__bottone" id="gt1" aria-controls="gp1" aria-selected="false"><span>2</span>Decidi</button>
+<button type="button" role="tab" class="gtab__bottone" id="gt2" aria-controls="gp2" aria-selected="false"><span>3</span>Ti prepara</button>
+<button type="button" role="tab" class="gtab__bottone" id="gt3" aria-controls="gp3" aria-selected="false"><span>4</span>Invii tu</button>
+</div>
+<article class="gpasso" role="tabpanel" id="gp0" aria-labelledby="gt0">
+          <div class="gpasso__testo">
+            <p class="pillola">Ti arriva</p>
+            <h3>Solo le gare che fanno per te.</h3>
+            <p>Frontius controlla ogni giorno le gare di lavori pubblicate in Italia (la gran parte di quelle con CIG) e ti mostra solo quelle adatte: categoria SOA, zona e importo. In elenco o sulla mappa d'Italia.</p>
+            <ul class="punti"><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Ogni gara dice perché è adatta a te, con la fonte del dato.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Mappa d'Italia con le gare vicino a te.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Una sola azione: aggiungila alle tue gare.</li></ul>
+          </div>
+          <figure class="vetrina">
+            <div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="./img/trova-elenco-v4.jpg" width="1440" height="900" loading="lazy" alt="Elenco delle gare adatte all'impresa nel gestionale Frontius">
+          </figure>
+        </article>
+<article class="gpasso" role="tabpanel" id="gp1" aria-labelledby="gt1" hidden>
+          <div class="gpasso__testo">
+            <p class="pillola">Decidi</p>
+            <h3>Una pagina, e sai se vale la pena.</h3>
+            <p>Frontius legge i documenti della gara e ti segnala requisiti, penali, sopralluogo e contraddizioni, con la fonte di ogni dato. Se un dato non c'è, scrive "non noto": non lo inventa. E ti mostra con che ribasso si vincono di solito gare simili.</p>
+            <ul class="punti"><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Requisiti e rischi in una pagina.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Ribasso tipico dalle gare già aggiudicate.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Chi compra, quanto spende e chi vince: la scheda dell'ente.</li></ul>
+          </div>
+          <figure class="vetrina">
+            <div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="./img/valuta-scheda-v4.jpg" width="1440" height="900" loading="lazy" alt="Scheda di una gara con i motivi per cui è adatta e il ribasso tipico">
+          </figure>
+        </article>
+<article class="gpasso" role="tabpanel" id="gp2" aria-labelledby="gt2" hidden>
+          <div class="gpasso__testo">
+            <p class="pillola">Ti prepara</p>
+            <h3>Le buste partono già scritte.</h3>
+            <p>Frontius prepara la documentazione amministrativa dai dati della tua azienda, una bozza di relazione tecnica e l'offerta economica. Li scarichi in Word, Excel e PDF, con carta intestata e cartelle in ordine.</p>
+            <ul class="punti"><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Busta A: bozza di domanda e dichiarazioni, da completare e firmare.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Busta B: relazione tecnica sulle tue esperienze.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Busta C: offerta economica in Excel, con la garanzia calcolata.</li></ul>
+          </div>
+          <figure class="vetrina">
+            <div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="./img/prepara-buste-v4.jpg" width="1440" height="900" loading="lazy" alt="Preparazione delle buste A, B e C nel gestionale Frontius">
+          </figure>
+        </article>
+<article class="gpasso" role="tabpanel" id="gp3" aria-labelledby="gt3" hidden>
+          <div class="gpasso__testo">
+            <p class="pillola">Invii tu</p>
+            <h3>L'ultimo controllo, poi invii tu.</h3>
+            <p>Prima dell'invio Frontius controlla che non manchi nulla. Non invia mai niente da solo: la decisione e la firma restano tue. Poi la gara passa nell'archivio, e impari da quelle vinte e da quelle perse.</p>
+            <ul class="punti"><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Controllo dei documenti prima dell'invio.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Scadenze e proroghe tenute d'occhio.</li><li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Archivio delle tue gare.</li></ul>
+          </div>
+          <figure class="vetrina">
+            <div class="vetrina__barra" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="./img/enti-concorrenti-v4.jpg" width="1440" height="900" loading="lazy" alt="Scheda ente e concorrenti nel gestionale Frontius">
+          </figure>
+        </article>
+</div>
+</div>
+      </div>
+    </section>
+
+    <!-- 6 · Ribasso e costi -->
+    <section class="sezione" id="ribasso">
+      <div class="contenitore">
+        <header class="intestazione rivela">
+          <p class="pillola">Il ribasso</p>
+          <h2>Smetti di ribassare a occhio.</h2>
+          <p class="etichetta-affinamento">Dati ANAC · Stima, non certezza</p>
+        </header>
+        <p class="ribasso__spiega rivela">Immagina di aprire una gara e vedere subito dove, di solito, si vince: la fascia di ribasso delle gare simili e quella dell'ente che la bandisce, con il numero di gare su cui si basa. Non è una promessa di vittoria: è partire dai numeri veri invece che da una sensazione.</p>
+        <div class="fascia rivela" role="img" aria-label="Fascia di ribasso: dal 19,4% al 36,5%, mediana 28,8%, su 84 gare">
+          <div class="fascia__testa"><span>Esempio reale: ribassi con cui questo ente ha assegnato lavori, su 84 gare</span><span class="etichetta etichetta--scura">Dati ANAC</span></div>
+          <div class="fascia__scala">
+            <div class="fascia__barra"><i class="fascia__zona" style="left:48.5%;width:42.75%"></i><i class="fascia__med" style="left:72%"></i></div>
+            <div class="fascia__assi"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span></div>
+          </div>
+          <div class="fascia__numeri">
+            <div><small>Un quarto delle gare sotto</small><b>19,4%</b></div>
+            <div class="fascia__mezzo"><small>Valore centrale</small><b>28,8%</b></div>
+            <div><small>Tre quarti delle gare sotto</small><b>36,5%</b></div>
+          </div>
+          <p class="fascia__nota">La fascia ti dice dove si è vinto davvero. Il numero di gare e la fonte sono sempre scritti. Se i dati sono pochi, te lo diciamo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Domande -->
+    <section class="sezione" id="domande">
+      <div class="contenitore domande__griglia">
+        <header class="domande__intro rivela">
+          <p class="pillola">Domande</p>
+          <h2>Domande frequenti</h2>
+          <p class="domande__sotto">Hai altre domande? Le vediamo insieme nella demo.</p>
+          <a class="collegamento" href="#demo">Richiedi una demo</a>
+        </header>
+        <div class="domande">
+          <details class="domanda">
+            <summary>Che differenza c'è con un servizio che mi manda le gare?</summary>
+            <p>Un servizio di segnalazione ti manda l'elenco e il resto lo fai tu. Frontius sceglie quelle adatte alla tua impresa, ti spiega perché e prepara le bozze dell'offerta.</p>
+          </details>
+          <details class="domanda">
+            <summary>Cosa trovo quando Frontius ha letto una gara?</summary>
+            <p>Legge bando, disciplinare e capitolato e controlla requisiti e condizioni su 15 punti. Ti dice se la gara fa per te e cosa va verificato. Poi prepara le bozze di busta amministrativa, offerta tecnica e offerta economica, e ti mostra i ribassi con cui si sono vinte gare simili.</p>
+          </details>
+          <details class="domanda">
+            <summary>Non posso usare un assistente AI qualunque?</summary>
+            <p>Un assistente generico risponde a quello che gli chiedi. Frontius parte dai dati della tua impresa e dalle regole del Codice degli appalti: cerca le gare, le controlla su 15 punti e prepara i documenti in Word ed Excel. I tuoi dati restano riservati.</p>
+          </details>
+          <details class="domanda">
+            <summary>Come cambia il lavoro del mio ufficio gare?</summary>
+            <p>Le gare arrivano già lette e controllate, con i motivi e i punti da verificare. Le bozze arrivano pronte da rivedere in Word ed Excel. Il tuo ufficio tecnico si concentra sulle decisioni e sul cantiere.</p>
+          </details>
+          <details class="domanda">
+            <summary>Chi vede i miei prezzi e le mie offerte?</summary>
+            <p>I tuoi dati li vede solo la tua impresa: un'altra impresa che usa Frontius non può vedere le tue offerte né i tuoi prezzi. Dove e come sono conservati, e l'accordo di riservatezza, te li spieghiamo nella demo prima che tu carichi qualcosa.</p>
+          </details>
+          <details class="domanda">
+            <summary>Chi decide e chi firma?</summary>
+            <p>Scegli a quali gare partecipare, controlli le bozze, procuri la garanzia se la gara la chiede, firmi e invii l'offerta. Le decisioni restano tue.</p>
+          </details>
+          <details class="domanda">
+            <summary>Va bene anche se ho una sola SOA?</summary>
+            <p>Sì. Frontius parte dalle categorie SOA che hai, generali (OG) e specialistiche (OS), e ti segnala le gare in cui sei qualificato.</p>
+          </details>
+          <details class="domanda">
+            <summary>Una gara chiede una SOA che non ho: che faccio?</summary>
+            <p>Oggi ti dice quali categorie ti mancano e se puoi coprirle con subappalto, avvalimento o raggruppamento. In arrivo: la ricerca di imprese qualificate vicino al cantiere, controllate sui dati pubblici. Nella demo ti spieghiamo come funzionerà.</p>
+          </details>
+          <details class="domanda">
+            <summary>Cosa mi serve per cominciare?</summary>
+            <p>Ti bastano due cose: la Partita IVA della tua impresa e un contatto di riferimento.</p>
+          </details>
+          <details class="domanda">
+            <summary>Quanto costa e come si paga?</summary>
+            <p>Dipende dalle gare che segui: il prezzo lo definiamo con te dopo la demo, quando conosciamo l'impresa e le procedure che ti interessano. Il servizio comprende selezione delle gare, preparazione della documentazione e supporto su ribasso, quantità e preventivi.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · Richiedi una demo -->
+    <section class="sezione demo" id="demo">
+      <div class="contenitore demo__griglia">
+        <div class="demo__testo rivela">
+          <h2>Portaci una tua gara. Te la facciamo vedere cucita su di te.</h2>
+          <p class="demo__sotto">Una demo online di circa 20 minuti. Lascia i tuoi dati, ti richiamiamo per fissarla. Se vuoi, indica una gara che stai valutando: la apriamo insieme.</p>
+          <ul class="punti">
+            <li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Vedi perché una gara fa per te e cosa va verificato.</li>
+            <li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Vedi dove, di solito, si vince: una guida, mai una promessa.</li>
+            <li><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Le bozze le rivedi e le modifichi tu. Decidi e firmi sempre tu.</li>
+          </ul>
+        </div>
+
+        <div class="modulo" data-attivo="si" data-endpoint="emailjs:service_nfhd6qo:template_mgq0jqe:NSrraar6FR9ohctos">
+          <form class="modulo__passo" id="passo-1" name="demo" method="post" action="/"
+             novalidate>
+            <input type="hidden" name="form-name" value="demo">
+            <p class="nascosto-spam" aria-hidden="true"><label>Non compilare <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
+            <p class="modulo__passi">Passo 1 di 2</p>
+            <div class="campo">
+              <label for="f-nome">Nome e cognome</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div class="campo">
+              <label for="f-impresa">Impresa</label>
+              <input id="f-impresa" name="impresa" type="text" autocomplete="organization" required>
+            </div>
+            <div class="campo">
+              <label for="f-telefono">Telefono</label>
+              <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="campo">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <button class="pulsante pulsante--pieno" type="submit">Richiedi una demo</button>
+            <p class="modulo__privacy"><a class="collegamento" href="privacy.html" target="_blank" rel="noopener">Informativa privacy</a></p>
+            <p class="modulo__stato" role="status" aria-live="polite"></p>
+          </form>
+
+          <form class="modulo__passo" id="passo-2" name="demo-dettagli" method="post" action="/" hidden
+             novalidate>
+            <input type="hidden" name="form-name" value="demo-dettagli">
+            <input type="hidden" name="email" value="">
+            <input type="hidden" name="impresa" value="">
+            <p class="nascosto-spam" aria-hidden="true"><label>Non compilare <input name="sito-web" tabindex="-1" autocomplete="off"></label></p>
+            <p class="modulo__passi" tabindex="-1">Passo 2 di 2 · facoltativo</p>
+            <fieldset class="campo">
+              <legend>Categorie SOA</legend>
+              <details class="cat-gruppo">
+    <summary>Edili <small>5</small></summary>
+    <div class="cat-gruppo__voci"><label class="cat"><input type="checkbox" name="categorie" value="OG1"><span><b>OG1</b> Edifici civili e industriali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG2"><span><b>OG2</b> Restauro e manutenzione beni tutelati</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS6"><span><b>OS6</b> Finiture in materiali lignei, plastici, metallici, vetrosi</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS7"><span><b>OS7</b> Finiture di natura edile e tecnica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS8"><span><b>OS8</b> Impermeabilizzazioni</span></label></div>
+  </details><details class="cat-gruppo">
+    <summary>Infrastrutture <small>15</small></summary>
+    <div class="cat-gruppo__voci"><label class="cat"><input type="checkbox" name="categorie" value="OG3"><span><b>OG3</b> Strade, ponti, ferrovie, metropolitane</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG4"><span><b>OG4</b> Opere d'arte nel sottosuolo</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG5"><span><b>OG5</b> Dighe</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG6"><span><b>OG6</b> Acquedotti, gasdotti, fognature, irrigazione</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG7"><span><b>OG7</b> Opere marittime e dragaggio</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG8"><span><b>OG8</b> Opere fluviali e sistemazione idraulica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG12"><span><b>OG12</b> Bonifica e protezione ambientale</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG13"><span><b>OG13</b> Ingegneria naturalistica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS9"><span><b>OS9</b> Segnaletica luminosa e sicurezza del traffico</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS10"><span><b>OS10</b> Segnaletica stradale non luminosa</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS12-A"><span><b>OS12-A</b> Barriere stradali di sicurezza</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS12-B"><span><b>OS12-B</b> Barriere paramassi e fermaneve</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS26"><span><b>OS26</b> Pavimentazioni e sovrastrutture speciali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS29"><span><b>OS29</b> Armamento ferroviario</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS34"><span><b>OS34</b> Sistemi antirumore per infrastrutture</span></label></div>
+  </details><details class="cat-gruppo">
+    <summary>Impianti <small>15</small></summary>
+    <div class="cat-gruppo__voci"><label class="cat"><input type="checkbox" name="categorie" value="OG9"><span><b>OG9</b> Impianti di produzione di energia elettrica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG10"><span><b>OG10</b> Trasformazione AT/MT e pubblica illuminazione</span></label><label class="cat"><input type="checkbox" name="categorie" value="OG11"><span><b>OG11</b> Impianti tecnologici</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS3"><span><b>OS3</b> Impianti idrico-sanitari, cucine, lavanderie</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS4"><span><b>OS4</b> Impianti elettromeccanici trasportatori</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS5"><span><b>OS5</b> Impianti pneumatici e antintrusione</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS14"><span><b>OS14</b> Impianti di smaltimento e recupero rifiuti</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS16"><span><b>OS16</b> Impianti per centrali di produzione elettrica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS17"><span><b>OS17</b> Linee e impianti telefonici</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS19"><span><b>OS19</b> Reti di telecomunicazione e dati</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS22"><span><b>OS22</b> Impianti di potabilizzazione e depurazione</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS27"><span><b>OS27</b> Impianti per la trazione elettrica</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS28"><span><b>OS28</b> Impianti termici e di condizionamento</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS30"><span><b>OS30</b> Impianti elettrici interni, telefonici, TV</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS31"><span><b>OS31</b> Impianti per la mobilità sospesa</span></label></div>
+  </details><details class="cat-gruppo">
+    <summary>Specialistiche <small>17</small></summary>
+    <div class="cat-gruppo__voci"><label class="cat"><input type="checkbox" name="categorie" value="OS1"><span><b>OS1</b> Lavori in terra</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS2-A"><span><b>OS2-A</b> Superfici decorate e beni culturali mobili</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS2-B"><span><b>OS2-B</b> Beni culturali archivistici e librari</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS11"><span><b>OS11</b> Apparecchiature strutturali speciali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS13"><span><b>OS13</b> Strutture prefabbricate in c.a.</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS15"><span><b>OS15</b> Pulizia di acque marine, lacustri, fluviali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS18-A"><span><b>OS18-A</b> Strutture in acciaio</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS18-B"><span><b>OS18-B</b> Facciate continue</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS20-A"><span><b>OS20-A</b> Rilievi topografici</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS20-B"><span><b>OS20-B</b> Indagini geognostiche</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS21"><span><b>OS21</b> Opere strutturali speciali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS23"><span><b>OS23</b> Demolizioni</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS24"><span><b>OS24</b> Verde e arredo urbano</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS25"><span><b>OS25</b> Scavi archeologici</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS32"><span><b>OS32</b> Strutture in legno</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS33"><span><b>OS33</b> Coperture speciali</span></label><label class="cat"><input type="checkbox" name="categorie" value="OS35"><span><b>OS35</b> Interventi a basso impatto ambientale</span></label></div>
+  </details>
+            </fieldset>
+            <div class="campo">
+              <label for="f-provincia">Provincia</label>
+              <input id="f-provincia" name="provincia" type="text" autocomplete="address-level2">
+            </div>
+            <div class="campo">
+              <label for="f-gara">Una gara che stai valutando (link o nome)</label>
+              <input id="f-gara" name="gara" type="text">
+            </div>
+            <div class="modulo__azioni">
+              <button class="pulsante pulsante--pieno" type="submit">Invia i dettagli</button>
+              <button class="collegamento modulo__salta" type="button">Salta</button>
+            </div>
+            <p class="modulo__stato" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="modulo__conferma" id="conferma" hidden tabindex="-1">
+            <p class="modulo__conferma-titolo"><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>Richiesta inviata.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="piede">
+    <div class="contenitore">
+      <div class="piede__colonne">
+        <div class="piede__marchio">
+          <a class="logo piede__logo" href="#inizio" aria-label="Frontius, torna all'inizio">
+          <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+          </a>
+          
+          
+        </div>
+        <nav class="piede__colonna" aria-labelledby="piede-menu">
+          <h2 class="piede__titolo" id="piede-menu">Menu</h2>
+          <ul>
+            <li><a href="#scheda">La scheda della gara</a></li>
+            <li><a href="#come-funziona">Come funziona</a></li>
+            <li><a href="#ribasso">Ribasso e costi</a></li>
+            <li><a href="#domande">Domande</a></li>
+            <li><a href="#demo">Richiedi una demo</a></li>
+          </ul>
+        </nav>
+        <nav class="piede__colonna" aria-labelledby="piede-risorse">
+          <h2 class="piede__titolo" id="piede-risorse">Risorse</h2>
+          <ul>
+            <li><a href="subappalto.html" data-voce="subappalto">Subappalto</a></li>
+            <li><a href="normativa.html" data-voce="normativa">Normativa per le gare</a></li>
+            <li><a href="glossario.html" data-voce="glossario">Glossario</a></li>
+            <li><a href="categorie-soa.html" data-voce="categorie-soa">Categorie SOA</a></li>
+          </ul>
+        </nav>
+        
+        <div class="piede__colonna">
+          <h2 class="piede__titolo">Note legali</h2>
+          <ul>
+            <li><a href="privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <p class="piede__fondo">© 2026 Frontius</p>
+    </div>
+  </footer>
+
+  <aside class="barra-mobile" aria-label="Richiedi una demo">
+    <a class="pulsante pulsante--pieno" href="#demo">Richiedi una demo</a>
+    
+  </aside>
+
+
+</body>
+</html>

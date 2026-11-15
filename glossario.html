@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossario delle gare d'appalto · Frontius</title>
+  <meta name="description" content="Le parole che trovi in bandi, disciplinari e capitolati delle gare di lavori pubblici, spiegate in breve: dall'avvalimento al subappalto.">
+    <meta name="robots" content="noindex, nofollow">
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    // Prima del disegno: segnala che JavaScript c'è e se il movimento va ridotto.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var ridotto = /[?&]movimento=ridotto\b/.test(location.search) ||
+        (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+      if (ridotto) d.classList.add('movimento-ridotto');
+      // Se lo script della pagina non parte, mostra tutto nello stato finale.
+      setTimeout(function () { if (!window.__frontius) d.classList.add('movimento-ridotto'); }, 4000);
+    })();
+  </script>
+
+  <script type="module" crossorigin src="./assets/calcoli-CBQlTHow.js"></script>
+  <script type="module" crossorigin src="./assets/risorse-DiARl-eu.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/calcoli-6c4dFeu5.css">
+  <link rel="stylesheet" crossorigin href="./assets/risorse-ChjlAvm8.css">
+</head>
+<body>
+    <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <header class="testata">
+    <div class="testata__interno">
+      <a class="logo" href="index.html" aria-label="Frontius, vai alla Home">
+        <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+      </a>
+      <nav class="menu" aria-label="Menu principale">
+        <ul class="menu__lista">
+          <li><a class="menu__voce" href="index.html#come-funziona">Come funziona</a></li>
+          <li><a class="menu__voce" href="index.html#ribasso">Ribasso</a></li>
+          <li><a class="menu__voce" href="index.html#domande">Domande</a></li>
+          <li>
+            <details class="menu__gruppo">
+              <summary class="menu__voce menu__voce--attiva">Risorse<svg class="menu__freccia" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></summary>
+              <div class="menu__tendina">
+                <p class="menu__titolo">Risorse per le gare</p>
+                <ul class="menu__voci">
+                  <li><a href="subappalto.html" data-voce="subappalto">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="10" height="10" rx="2"/><rect x="11" y="10.5" width="10" height="10" rx="2"/></svg>
+                    <span><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></span>
+                  </a></li>
+                  <li><a href="normativa.html" data-voce="normativa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></svg>
+                    <span><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></span>
+                  </a></li>
+                  <li><a href="glossario.html" data-voce="glossario" aria-current="page">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19M9 7.5h6"/></svg>
+                    <span><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></span>
+                  </a></li>
+                  <li><a href="categorie-soa.html" data-voce="categorie-soa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M17 13.5v7M13.5 17h7"/></svg>
+                    <span><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></span>
+                  </a></li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <a class="pulsante pulsante--piccolo testata__cta" href="index.html#demo">Richiedi una demo</a>
+
+      <details class="menu-mobile">
+        <summary class="menu-mobile__apri"><span class="menu-mobile__icona" aria-hidden="true"><i></i><i></i></span>Menu</summary>
+        <nav class="menu-mobile__pannello" aria-label="Menu principale">
+          <a class="menu-mobile__voce" href="index.html#come-funziona">Come funziona</a>
+          <a class="menu-mobile__voce" href="index.html#ribasso">Ribasso</a>
+          <a class="menu-mobile__voce" href="index.html#domande">Domande</a>
+          <details class="menu-mobile__gruppo" open>
+            <summary>Risorse</summary>
+            <ul>
+              <li><a href="subappalto.html" data-voce="subappalto"><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></a></li>
+              <li><a href="normativa.html" data-voce="normativa"><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></a></li>
+              <li><a href="glossario.html" data-voce="glossario" aria-current="page"><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></a></li>
+              <li><a href="categorie-soa.html" data-voce="categorie-soa"><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></a></li>
+            </ul>
+          </details>
+          <a class="pulsante pulsante--pieno" href="index.html#demo">Richiedi una demo</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+
+  <main id="contenuto" class="risorsa">
+
+    <header class="risorsa__testa">
+      <div class="contenitore">
+        <p class="occhiello rivela">Risorse · Glossario</p>
+        <h1 class="rivela">Glossario delle gare.</h1>
+        <p class="risorsa__sotto rivela">56 parole che trovi in bandi, disciplinari e capitolati, spiegate in breve.</p>
+      </div>
+    </header>
+
+    <section class="risorsa__blocco risorsa__blocco--elenco" aria-label="Voci del glossario">
+      <div class="contenitore" data-filtro-area>
+      <div class="filtro" data-filtro-barra>
+        <label class="filtro__cerca">
+          <span class="sr">Cerca nel glossario</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+          <input type="search" data-cerca placeholder="Cerca: DURC, avvalimento…" autocomplete="off">
+        </label>
+        
+        <p class="filtro__conteggio" data-conteggio aria-live="polite"></p>
+      </div>
+      <nav class="lettere" aria-label="Lettere">
+        <ul><li><a href="#lettera-a">A</a></li><li><a href="#lettera-b">B</a></li><li><a href="#lettera-c">C</a></li><li><a href="#lettera-d">D</a></li><li><a href="#lettera-e">E</a></li><li><a href="#lettera-f">F</a></li><li><a href="#lettera-g">G</a></li><li><a href="#lettera-i">I</a></li><li><a href="#lettera-l">L</a></li><li><a href="#lettera-m">M</a></li><li><a href="#lettera-n">N</a></li><li><a href="#lettera-o">O</a></li><li><a href="#lettera-p">P</a></li><li><a href="#lettera-r">R</a></li><li><a href="#lettera-s">S</a></li><li><a href="#lettera-t">T</a></li><li><a href="#lettera-w">W</a></li></ul>
+      </nav>
+      <div class="glossario">
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-a">
+        <h2 class="glossario__lettera" id="lettera-a">A</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="affidamento-diretto">
+            <dt>Affidamento diretto</dt>
+            <dd>
+              <p>La stazione appaltante sceglie l'impresa senza gara. Per i lavori vale sotto 150.000 €.</p>
+              <p class="voce__rif">Art. 50</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="aggiudicazione">
+            <dt>Aggiudicazione</dt>
+            <dd>
+              <p>L'atto con cui la stazione appaltante sceglie l'offerta migliore. È efficace subito; il contratto si firma dopo.</p>
+              <p class="voce__rif">Art. 17</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="anac">
+            <dt>ANAC</dt>
+            <dd>
+              <p>Autorità nazionale anticorruzione. Vigila sugli appalti e gestisce la Banca dati nazionale dei contratti pubblici.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="anticipazione">
+            <dt>Anticipazione</dt>
+            <dd>
+              <p>Una parte del prezzo pagata all'inizio dei lavori: il 20% del contratto, fino al 30% se il bando lo prevede.</p>
+              <p class="voce__rif">Art. 125</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="attestazione-soa">
+            <dt>Attestazione SOA</dt>
+            <dd>
+              <p>Il certificato che dice in quali categorie e fino a quale classifica l'impresa può eseguire lavori pubblici. Serve da 150.000 € in su.</p>
+              <p class="voce__rif">Art. 100</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="avvalimento">
+            <dt>Avvalimento</dt>
+            <dd>
+              <p>Usi i requisiti di un'altra impresa, l'ausiliaria, che mette a disposizione le sue risorse per tutto l'appalto.</p>
+              <p class="voce__rif">Art. 104 · <a href="subappalto.html#strade">Approfondisci</a></p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-b">
+        <h2 class="glossario__lettera" id="lettera-b">B</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="banca-dati-nazionale-dei-contratti-pubblici">
+            <dt>Banca dati nazionale dei contratti pubblici <abbr class="voce__sigla">BDNCP</abbr></dt>
+            <dd>
+              <p>La banca dati di ANAC da cui passano le informazioni sulle gare e le verifiche sulle imprese.</p>
+              <p class="voce__rif">Art. 23</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="bando-di-gara">
+            <dt>Bando di gara</dt>
+            <dd>
+              <p>L'avviso con cui la stazione appaltante annuncia la gara: oggetto, importo, requisiti e scadenze.</p>
+              
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-c">
+        <h2 class="glossario__lettera" id="lettera-c">C</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="capitolato-speciale-d-appalto">
+            <dt>Capitolato speciale d'appalto</dt>
+            <dd>
+              <p>Il documento con le regole tecniche ed economiche dei lavori: come vanno eseguiti, tempi, penali e pagamenti.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="categoria-prevalente">
+            <dt>Categoria prevalente</dt>
+            <dd>
+              <p>La categoria di lavori con l'importo più alto tra quelle della gara.</p>
+              <p class="voce__rif"><a href="categorie-soa.html">Approfondisci</a></p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="categoria-scorporabile">
+            <dt>Categoria scorporabile</dt>
+            <dd>
+              <p>Ogni categoria di lavori diversa dalla prevalente, indicata nel bando con il suo importo.</p>
+              <p class="voce__rif"><a href="categorie-soa.html">Approfondisci</a></p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="categoria-soa">
+            <dt>Categoria SOA</dt>
+            <dd>
+              <p>Il tipo di lavori per cui un'impresa è qualificata. Sono 52: 13 di opere generali (OG) e 39 di opere specializzate (OS).</p>
+              <p class="voce__rif"><a href="categorie-soa.html">Approfondisci</a></p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="cig">
+            <dt>CIG</dt>
+            <dd>
+              <p>Codice identificativo gara. Identifica la gara o il lotto e va riportato sui pagamenti.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="classifica">
+            <dt>Classifica</dt>
+            <dd>
+              <p>L'importo fino a cui l'impresa è qualificata in una categoria. Va dalla I alla VIII.</p>
+              <p class="voce__rif">Allegato II.12 · <a href="categorie-soa.html">Approfondisci</a></p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="collaudo">
+            <dt>Collaudo</dt>
+            <dd>
+              <p>La verifica finale che i lavori siano stati eseguiti secondo il contratto. Dopo il collaudo si paga il saldo.</p>
+              <p class="voce__rif">Art. 125</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="computo-metrico-estimativo">
+            <dt>Computo metrico estimativo</dt>
+            <dd>
+              <p>L'elenco delle lavorazioni con quantità e prezzi. È la base dell'importo dei lavori.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="costi-della-manodopera">
+            <dt>Costi della manodopera</dt>
+            <dd>
+              <p>Il costo del lavoro stimato dalla stazione appaltante. È indicato nel bando e tolto dall'importo su cui si fa il ribasso.</p>
+              <p class="voce__rif">Art. 41</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="costi-della-sicurezza">
+            <dt>Costi della sicurezza</dt>
+            <dd>
+              <p>I costi per la sicurezza del cantiere previsti nel piano di sicurezza. Non si ribassano.</p>
+              <p class="voce__rif">Art. 41</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="cup">
+            <dt>CUP</dt>
+            <dd>
+              <p>Codice unico di progetto. Identifica l'investimento pubblico a cui appartiene la gara.</p>
+              
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-d">
+        <h2 class="glossario__lettera" id="lettera-d">D</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="dgue">
+            <dt>DGUE</dt>
+            <dd>
+              <p>Documento di gara unico europeo. Con questo modulo digitale dichiari di avere i requisiti generali e speciali.</p>
+              <p class="voce__rif">Art. 91</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="direttore-dei-lavori">
+            <dt>Direttore dei lavori</dt>
+            <dd>
+              <p>Il tecnico della stazione appaltante che segue il cantiere e adotta gli stati di avanzamento.</p>
+              <p class="voce__rif">Art. 125</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="disciplinare-di-gara">
+            <dt>Disciplinare di gara</dt>
+            <dd>
+              <p>Il documento che spiega come partecipare: cosa presentare, come si valutano le offerte, quali regole valgono.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="durc">
+            <dt>DURC</dt>
+            <dd>
+              <p>Documento unico di regolarità contributiva. Attesta che l'impresa è in regola con INPS, INAIL e Cassa edile.</p>
+              
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-e">
+        <h2 class="glossario__lettera" id="lettera-e">E</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="esclusione-automatica">
+            <dt>Esclusione automatica</dt>
+            <dd>
+              <p>Sotto soglia, con il prezzo più basso e almeno 5 offerte ammesse, le offerte anomale sono escluse senza chiedere spiegazioni.</p>
+              <p class="voce__rif">Art. 54</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-f">
+        <h2 class="glossario__lettera" id="lettera-f">F</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="fascicolo-virtuale-dell-operatore-economico">
+            <dt>Fascicolo virtuale dell'operatore economico <abbr class="voce__sigla">FVOE</abbr></dt>
+            <dd>
+              <p>Il fascicolo digitale con i documenti dell'impresa che le stazioni appaltanti usano per verificare i requisiti.</p>
+              <p class="voce__rif">Art. 24</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-g">
+        <h2 class="glossario__lettera" id="lettera-g">G</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="garanzia-definitiva">
+            <dt>Garanzia definitiva</dt>
+            <dd>
+              <p>La garanzia che dai alla firma del contratto: il 10% dell'importo, di più se il ribasso supera il 10%.</p>
+              <p class="voce__rif">Art. 117</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="garanzia-provvisoria">
+            <dt>Garanzia provvisoria</dt>
+            <dd>
+              <p>La garanzia che accompagna l'offerta: di norma il 2% del valore della gara.</p>
+              <p class="voce__rif">Art. 106</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-i">
+        <h2 class="glossario__lettera" id="lettera-i">I</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="incremento-del-quinto">
+            <dt>Incremento del quinto</dt>
+            <dd>
+              <p>La classifica SOA vale fino al suo importo aumentato di un quinto. La III (1.033.000 €) arriva a 1.239.600 €.</p>
+              <p class="voce__rif">Allegato II.12, art. 2 · <a href="categorie-soa.html#classifiche">Approfondisci</a></p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-l">
+        <h2 class="glossario__lettera" id="lettera-l">L</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="lotto">
+            <dt>Lotto</dt>
+            <dd>
+              <p>Una parte della gara che si aggiudica da sola. Ogni lotto ha il suo CIG.</p>
+              
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-m">
+        <h2 class="glossario__lettera" id="lettera-m">M</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="minor-prezzo">
+            <dt>Minor prezzo</dt>
+            <dd>
+              <p>Il criterio in cui vince il ribasso più alto. Nei lavori sotto soglia la stazione appaltante può sceglierlo.</p>
+              <p class="voce__rif">Art. 50, c. 4</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-n">
+        <h2 class="glossario__lettera" id="lettera-n">N</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="nolo-a-caldo">
+            <dt>Nolo a caldo</dt>
+            <dd>
+              <p>Il noleggio di un mezzo con il suo operatore. Oltre il 2% delle prestazioni o 100.000 €, e con manodopera oltre il 50%, conta come subappalto.</p>
+              <p class="voce__rif">Art. 119, c. 2</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-o">
+        <h2 class="glossario__lettera" id="lettera-o">O</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="offerta-anomala">
+            <dt>Offerta anomala</dt>
+            <dd>
+              <p>Un'offerta che sembra troppo bassa. La stazione appaltante chiede spiegazioni prima di escluderla.</p>
+              <p class="voce__rif">Art. 110</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="offerta-economicamente-piu-vantaggiosa">
+            <dt>Offerta economicamente più vantaggiosa <abbr class="voce__sigla">OEPV</abbr></dt>
+            <dd>
+              <p>Il criterio in cui si valutano qualità tecnica e prezzo, ciascuno con il suo punteggio. È la regola generale.</p>
+              <p class="voce__rif">Art. 108</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="operatore-economico">
+            <dt>Operatore economico</dt>
+            <dd>
+              <p>Il nome che il Codice dà a chi partecipa alle gare: impresa singola, raggruppamento o consorzio.</p>
+              
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-p">
+        <h2 class="glossario__lettera" id="lettera-p">P</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="piano-di-sicurezza-e-coordinamento">
+            <dt>Piano di sicurezza e coordinamento <abbr class="voce__sigla">PSC</abbr></dt>
+            <dd>
+              <p>Il piano preparato per la stazione appaltante con le misure di sicurezza del cantiere e i loro costi.</p>
+              <p class="voce__rif">D.Lgs. 81/2008</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="piano-operativo-di-sicurezza">
+            <dt>Piano operativo di sicurezza <abbr class="voce__sigla">POS</abbr></dt>
+            <dd>
+              <p>Il piano dell'impresa per la sicurezza del proprio lavoro in quel cantiere.</p>
+              <p class="voce__rif">D.Lgs. 81/2008</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="piattaforma-di-approvvigionamento-digitale">
+            <dt>Piattaforma di approvvigionamento digitale</dt>
+            <dd>
+              <p>Il sistema online della stazione appaltante su cui presenti domanda, DGUE e offerta.</p>
+              <p class="voce__rif">Art. 91</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="procedura-aperta">
+            <dt>Procedura aperta</dt>
+            <dd>
+              <p>La gara a cui può partecipare ogni impresa che ha i requisiti.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="procedura-negoziata">
+            <dt>Procedura negoziata</dt>
+            <dd>
+              <p>La gara a cui partecipano solo le imprese invitate. Sotto soglia, da 150.000 €, se ne invitano almeno 5 o 10 secondo l'importo.</p>
+              <p class="voce__rif">Art. 50</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-r">
+        <h2 class="glossario__lettera" id="lettera-r">R</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="raggruppamento-temporaneo-di-imprese">
+            <dt>Raggruppamento temporaneo di imprese <abbr class="voce__sigla">RTI</abbr></dt>
+            <dd>
+              <p>Più imprese che partecipano insieme a una gara, con una mandataria che le rappresenta.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="responsabile-unico-del-progetto">
+            <dt>Responsabile unico del progetto <abbr class="voce__sigla">RUP</abbr></dt>
+            <dd>
+              <p>La persona della stazione appaltante che segue gara e contratto, dalla programmazione al collaudo.</p>
+              <p class="voce__rif">Art. 15</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="revisione-prezzi">
+            <dt>Revisione prezzi</dt>
+            <dd>
+              <p>L'adeguamento del prezzo quando i costi cambiano. Nei lavori scatta oltre il 3% e copre il 90% della parte in più.</p>
+              <p class="voce__rif">Art. 60</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="ribasso">
+            <dt>Ribasso</dt>
+            <dd>
+              <p>Lo sconto in percentuale che offri sull'importo a base di gara, senza i costi della sicurezza e della manodopera.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="ritenuta-dello-0-50">
+            <dt>Ritenuta dello 0,50%</dt>
+            <dd>
+              <p>Una trattenuta su ogni pagamento, restituita dopo il collaudo.</p>
+              <p class="voce__rif">Art. 11, c. 6</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-s">
+        <h2 class="glossario__lettera" id="lettera-s">S</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="self-cleaning">
+            <dt>Self-cleaning</dt>
+            <dd>
+              <p>Le misure con cui l'impresa dimostra di aver rimediato a un problema che potrebbe escluderla.</p>
+              <p class="voce__rif">Art. 96</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="soa">
+            <dt>SOA</dt>
+            <dd>
+              <p>Società organismo di attestazione. Società privata autorizzata da ANAC che rilascia l'attestazione di qualificazione.</p>
+              <p class="voce__rif">Art. 100</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="soccorso-istruttorio">
+            <dt>Soccorso istruttorio</dt>
+            <dd>
+              <p>La possibilità di completare o correggere i documenti della domanda entro un termine dato. Non vale per l'offerta tecnica ed economica.</p>
+              <p class="voce__rif">Art. 101</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="soglia-di-anomalia">
+            <dt>Soglia di anomalia</dt>
+            <dd>
+              <p>Il ribasso oltre il quale un'offerta è considerata anomala. Si calcola dalle offerte presentate.</p>
+              <p class="voce__rif">Allegato II.2</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="soglia-europea">
+            <dt>Soglia europea</dt>
+            <dd>
+              <p>L'importo sopra il quale valgono le regole europee sulle gare. Per i lavori la fissa l'art. 14.</p>
+              <p class="voce__rif">Art. 14</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="stand-still">
+            <dt>Stand still</dt>
+            <dd>
+              <p>L'attesa tra aggiudicazione e firma del contratto: 32 giorni sopra soglia. Sotto soglia non si applica.</p>
+              <p class="voce__rif">Art. 18 e art. 55</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="stato-di-avanzamento-lavori">
+            <dt>Stato di avanzamento lavori <abbr class="voce__sigla">SAL</abbr></dt>
+            <dd>
+              <p>Il documento che misura i lavori fatti fino a una data. Su ogni stato di avanzamento si paga un acconto entro 30 giorni.</p>
+              <p class="voce__rif">Art. 125</p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="stazione-appaltante">
+            <dt>Stazione appaltante</dt>
+            <dd>
+              <p>L'ente pubblico che bandisce la gara e firma il contratto: Comune, Provincia, Regione, ente o società pubblica.</p>
+              
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="subappalto">
+            <dt>Subappalto</dt>
+            <dd>
+              <p>Affidi a un'altra impresa una parte dei lavori, con i suoi mezzi e a suo rischio. Serve l'autorizzazione della stazione appaltante.</p>
+              <p class="voce__rif">Art. 119 · <a href="subappalto.html">Approfondisci</a></p>
+            </dd>
+          </div>
+          <div class="voce" data-elemento id="subappalto-a-cascata">
+            <dt>Subappalto a cascata</dt>
+            <dd>
+              <p>Il subappaltatore affida a sua volta una parte dei lavori. Segue le stesse regole, salvo le prestazioni che il bando esclude.</p>
+              <p class="voce__rif">Art. 119, c. 17 · <a href="subappalto.html">Approfondisci</a></p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-t">
+        <h2 class="glossario__lettera" id="lettera-t">T</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="tracciabilita-dei-flussi-finanziari">
+            <dt>Tracciabilità dei flussi finanziari</dt>
+            <dd>
+              <p>I pagamenti dell'appalto passano su un conto dedicato e riportano il CIG e, se c'è, il CUP.</p>
+              <p class="voce__rif">Legge 136/2010</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="glossario__gruppo" data-gruppo-filtro aria-labelledby="lettera-w">
+        <h2 class="glossario__lettera" id="lettera-w">W</h2>
+        <dl class="glossario__voci">
+          <div class="voce" data-elemento id="white-list">
+            <dt>White list</dt>
+            <dd>
+              <p>L'elenco della Prefettura delle imprese controllate contro le infiltrazioni mafiose, per le attività più esposte come noli, trasporti e forniture di calcestruzzo.</p>
+              <p class="voce__rif">Legge 190/2012</p>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      </div>
+      <p class="filtro__vuoto" data-vuoto hidden>Nessuna voce trovata. Prova con un'altra parola.</p>
+      </div>
+    </section>
+
+    <section class="altre" aria-labelledby="altre-titolo">
+      <div class="contenitore">
+        <h2 class="altre__titolo" id="altre-titolo">Altre risorse</h2>
+        <ul class="altre__lista">
+          <li><a class="altre__voce" href="subappalto.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="10" height="10" rx="2"/><rect x="11" y="10.5" width="10" height="10" rx="2"/></svg>
+            <b>Subappalto</b>
+            <span>Cosa dichiarare in offerta e come si autorizza</span>
+          </a></li>
+          <li><a class="altre__voce" href="normativa.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></svg>
+            <b>Normativa per le gare</b>
+            <span>Gli articoli del Codice che contano quando fai un'offerta</span>
+          </a></li>
+          <li><a class="altre__voce" href="categorie-soa.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M17 13.5v7M13.5 17h7"/></svg>
+            <b>Categorie SOA</b>
+            <span>Categorie, classifiche e quale ti serve</span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+        <section class="invito" aria-labelledby="invito-titolo">
+      <div class="contenitore">
+        <div class="invito__riquadro rivela">
+          <h2 id="invito-titolo">Scopri quali gare sono adatte alla tua impresa.</h2>
+          <p>Un team di agenti AI legge bandi e capitolati, sceglie le gare adatte alla tua impresa e prepara le bozze dell'offerta. Tu controlli e decidi.</p>
+          <a class="pulsante invito__pulsante" href="index.html#demo">Richiedi una demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="piede">
+    <div class="contenitore">
+      <div class="piede__colonne">
+        <div class="piede__marchio">
+          <a class="logo piede__logo" href="index.html" aria-label="Frontius, vai alla Home">
+          <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+          </a>
+          
+          
+        </div>
+        <nav class="piede__colonna" aria-labelledby="piede-menu">
+          <h2 class="piede__titolo" id="piede-menu">Menu</h2>
+          <ul>
+            <li><a href="index.html#scheda">La scheda della gara</a></li>
+            <li><a href="index.html#come-funziona">Come funziona</a></li>
+            <li><a href="index.html#ribasso">Ribasso e costi</a></li>
+            <li><a href="index.html#domande">Domande</a></li>
+            <li><a href="index.html#demo">Richiedi una demo</a></li>
+          </ul>
+        </nav>
+        <nav class="piede__colonna" aria-labelledby="piede-risorse">
+          <h2 class="piede__titolo" id="piede-risorse">Risorse</h2>
+          <ul>
+            <li><a href="subappalto.html" data-voce="subappalto">Subappalto</a></li>
+            <li><a href="normativa.html" data-voce="normativa">Normativa per le gare</a></li>
+            <li><a href="glossario.html" data-voce="glossario" aria-current="page">Glossario</a></li>
+            <li><a href="categorie-soa.html" data-voce="categorie-soa">Categorie SOA</a></li>
+          </ul>
+        </nav>
+        
+        <div class="piede__colonna">
+          <h2 class="piede__titolo">Note legali</h2>
+          <ul>
+            <li><a href="privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <p class="piede__fondo">© 2026 Frontius</p>
+    </div>
+  </footer>
+
+  <aside class="barra-mobile" aria-label="Richiedi una demo">
+    <a class="pulsante pulsante--pieno" href="index.html#demo">Richiedi una demo</a>
+    
+  </aside>
+
+
+</body>
+</html>

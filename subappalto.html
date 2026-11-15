@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subappalto nelle gare di lavori · Frontius</title>
+  <meta name="description" content="Cosa dichiarare in offerta, come si ottiene l'autorizzazione e cosa cambia tra subappalto e avvalimento. Le regole dell'art. 119 del Codice dei contratti pubblici.">
+    <meta name="robots" content="noindex, nofollow">
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    // Prima del disegno: segnala che JavaScript c'è e se il movimento va ridotto.
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var ridotto = /[?&]movimento=ridotto\b/.test(location.search) ||
+        (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+      if (ridotto) d.classList.add('movimento-ridotto');
+      // Se lo script della pagina non parte, mostra tutto nello stato finale.
+      setTimeout(function () { if (!window.__frontius) d.classList.add('movimento-ridotto'); }, 4000);
+    })();
+  </script>
+
+  <script type="module" crossorigin src="./assets/calcoli-CBQlTHow.js"></script>
+  <script type="module" crossorigin src="./assets/risorse-DiARl-eu.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/calcoli-6c4dFeu5.css">
+  <link rel="stylesheet" crossorigin href="./assets/risorse-ChjlAvm8.css">
+</head>
+<body>
+    <a class="salta" href="#contenuto">Vai al contenuto</a>
+
+  <header class="testata">
+    <div class="testata__interno">
+      <a class="logo" href="index.html" aria-label="Frontius, vai alla Home">
+        <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+      </a>
+      <nav class="menu" aria-label="Menu principale">
+        <ul class="menu__lista">
+          <li><a class="menu__voce" href="index.html#come-funziona">Come funziona</a></li>
+          <li><a class="menu__voce" href="index.html#ribasso">Ribasso</a></li>
+          <li><a class="menu__voce" href="index.html#domande">Domande</a></li>
+          <li>
+            <details class="menu__gruppo">
+              <summary class="menu__voce menu__voce--attiva">Risorse<svg class="menu__freccia" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></summary>
+              <div class="menu__tendina">
+                <p class="menu__titolo">Risorse per le gare</p>
+                <ul class="menu__voci">
+                  <li><a href="subappalto.html" data-voce="subappalto" aria-current="page">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="10" height="10" rx="2"/><rect x="11" y="10.5" width="10" height="10" rx="2"/></svg>
+                    <span><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></span>
+                  </a></li>
+                  <li><a href="normativa.html" data-voce="normativa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></svg>
+                    <span><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></span>
+                  </a></li>
+                  <li><a href="glossario.html" data-voce="glossario">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19M9 7.5h6"/></svg>
+                    <span><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></span>
+                  </a></li>
+                  <li><a href="categorie-soa.html" data-voce="categorie-soa">
+                    <svg class="menu__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M17 13.5v7M13.5 17h7"/></svg>
+                    <span><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></span>
+                  </a></li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      <a class="pulsante pulsante--piccolo testata__cta" href="index.html#demo">Richiedi una demo</a>
+
+      <details class="menu-mobile">
+        <summary class="menu-mobile__apri"><span class="menu-mobile__icona" aria-hidden="true"><i></i><i></i></span>Menu</summary>
+        <nav class="menu-mobile__pannello" aria-label="Menu principale">
+          <a class="menu-mobile__voce" href="index.html#come-funziona">Come funziona</a>
+          <a class="menu-mobile__voce" href="index.html#ribasso">Ribasso</a>
+          <a class="menu-mobile__voce" href="index.html#domande">Domande</a>
+          <details class="menu-mobile__gruppo" open>
+            <summary>Risorse</summary>
+            <ul>
+              <li><a href="subappalto.html" data-voce="subappalto" aria-current="page"><b>Subappalto</b><small>Cosa dichiarare in offerta e come si autorizza</small></a></li>
+              <li><a href="normativa.html" data-voce="normativa"><b>Normativa per le gare</b><small>Gli articoli del Codice che contano quando fai un'offerta</small></a></li>
+              <li><a href="glossario.html" data-voce="glossario"><b>Glossario</b><small>Le parole dei bandi, spiegate in breve</small></a></li>
+              <li><a href="categorie-soa.html" data-voce="categorie-soa"><b>Categorie SOA</b><small>Categorie, classifiche e quale ti serve</small></a></li>
+            </ul>
+          </details>
+          <a class="pulsante pulsante--pieno" href="index.html#demo">Richiedi una demo</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+
+  <main id="contenuto" class="risorsa">
+
+    <header class="risorsa__testa">
+      <div class="contenitore">
+        <p class="occhiello rivela">Risorse · Subappalto</p>
+        <h1 class="rivela">Subappalto: cosa dichiarare e quando.</h1>
+        <p class="risorsa__sotto rivela">Ti manca una categoria o vuoi affidare una parte dei lavori? Ecco cosa chiede il Codice, dall'offerta al cantiere.</p>
+        <p class="risorsa__fonte rivela">Fonte: art. 119 del Codice dei contratti pubblici (D.Lgs. 36/2023). <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-03-31;36~art119" target="_blank" rel="noopener">Leggi il testo su Normattiva<span class="sr"> (si apre in una nuova scheda)</span></a></p>
+      </div>
+    </header>
+
+    <section class="risorsa__blocco" aria-labelledby="in-breve">
+      <div class="contenitore">
+        <h2 class="risorsa__titolo" id="in-breve">In breve</h2>
+        <ul class="fatti">
+          <li class="fatto rivela">
+            <h3>Va dichiarato in offerta</h3>
+            <p>Puoi subappaltare solo le lavorazioni che hai indicato nell'offerta.</p>
+            <small>Art. 119, c. 4</small>
+          </li>
+          <li class="fatto rivela">
+            <h3>Serve l'autorizzazione</h3>
+            <p>La stazione appaltante risponde entro 30 giorni. Se non risponde, l'autorizzazione è data.</p>
+            <small>Art. 119, c. 16</small>
+          </li>
+          <li class="fatto rivela">
+            <h3>Sicurezza e manodopera senza ribasso</h3>
+            <p>Al subappaltatore paghi i costi della sicurezza e della manodopera senza ribasso.</p>
+            <small>Art. 119, c. 12</small>
+          </li>
+          <li class="fatto rivela">
+            <h3>Rispondete insieme</h3>
+            <p>Tu e il subappaltatore rispondete in solido verso la stazione appaltante, anche per paghe e contributi.</p>
+            <small>Art. 119, c. 6</small>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="risorsa__blocco" aria-labelledby="cosa-e">
+      <div class="contenitore">
+        <h2 class="risorsa__titolo" id="cosa-e">Cosa è subappalto e cosa no</h2>
+        <div class="confronto">
+          <div class="confronto__colonna rivela">
+            <h3><span class="simbolo simbolo--ok" aria-hidden="true">✓</span>È subappalto</h3>
+            <ul>
+              <li>Affidare a un'altra impresa una parte dei lavori, con i suoi mezzi e a suo rischio.</li>
+              <li>Le forniture con posa in opera e i noli a caldo, se superano il 2% delle prestazioni o 100.000 € e la manodopera pesa più del 50%.</li>
+            </ul>
+          </div>
+          <div class="confronto__colonna rivela">
+            <h3><span class="simbolo simbolo--no" aria-hidden="true">–</span>Non è subappalto</h3>
+            <ul>
+              <li>Le attività secondarie affidate a lavoratori autonomi. Vanno comunque comunicate.</li>
+              <li>Le prestazioni di contratti continuativi firmati prima della gara.</li>
+              <li>Gli altri subcontratti. Li comunichi alla stazione appaltante prima di iniziare.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="avvertenza rivela"><span class="simbolo simbolo--verifica" aria-hidden="true">!</span><span><b>Mai:</b> affidare a terzi l'intero contratto, o la parte prevalente dei lavori della categoria prevalente. L'accordo è nullo (art. 119, c. 1).</span></p>
+      </div>
+    </section>
+
+    <section class="risorsa__blocco" aria-labelledby="passi">
+      <div class="contenitore">
+        <h2 class="risorsa__titolo" id="passi">Passo per passo</h2>
+        <ol class="passi">
+          <li class="passo rivela">
+            <p class="passo__quando">In gara</p>
+            <h3>Leggi il bando e dichiara</h3>
+            <p>Il bando può indicare le lavorazioni da eseguire direttamente e quelle che il subappaltatore non può affidare ad altri. Nell'offerta indichi le lavorazioni che vuoi subappaltare.</p>
+            <small>Art. 119, c. 2, 4 e 17</small>
+          </li>
+          <li class="passo rivela">
+            <p class="passo__quando">Almeno 20 giorni prima dei lavori</p>
+            <h3>Deposita il contratto</h3>
+            <p>Trasmetti il contratto di subappalto con la dichiarazione del subappaltatore su requisiti e cause di esclusione. Dichiari anche se tra voi c'è un collegamento societario.</p>
+            <small>Art. 119, c. 5 e 16</small>
+          </li>
+          <li class="passo rivela">
+            <p class="passo__quando">Entro 30 giorni</p>
+            <h3>Arriva l'autorizzazione</h3>
+            <p>La stazione appaltante verifica e autorizza. Il termine si può prorogare una volta. Se non risponde, l'autorizzazione è data. Per subappalti sotto il 2% dei lavori o sotto 100.000 € i tempi sono dimezzati.</p>
+            <small>Art. 119, c. 16</small>
+          </li>
+          <li class="passo rivela">
+            <p class="passo__quando">In cantiere</p>
+            <h3>Le regole valgono per tutti</h3>
+            <p>Sul cartello di cantiere vanno tutte le imprese subappaltatrici. Il subappaltatore applica il contratto collettivo del settore e presenta il DURC, con la verifica della manodopera da parte della Cassa edile. Il coordinamento della sicurezza resta a te.</p>
+            <small>Art. 119, c. 7, 13, 14 e 15</small>
+          </li>
+          <li class="passo rivela">
+            <p class="passo__quando">Pagamenti</p>
+            <h3>Di norma paghi tu</h3>
+            <p>La stazione appaltante paga direttamente il subappaltatore se è una micro o piccola impresa, se tu non paghi, o se lo chiede e il contratto lo consente.</p>
+            <small>Art. 119, c. 11</small>
+          </li>
+          <li class="passo rivela">
+            <p class="passo__quando">A lavori finiti</p>
+            <h3>Il lavoro conta anche per lui</h3>
+            <p>I lavori eseguiti in subappalto valgono per l'attestazione SOA del subappaltatore.</p>
+            <small>Art. 119, c. 20</small>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="risorsa__blocco" id="strade" aria-labelledby="strade-titolo">
+      <div class="contenitore">
+        <h2 class="risorsa__titolo" id="strade-titolo">Ti manca una categoria?</h2>
+        <p class="risorsa__testo">Le strade sono tre: subappalto, avvalimento, oppure un raggruppamento con un'impresa che ha la categoria. In alcuni casi bastano i requisiti della categoria prevalente (Allegato II.12, art. 30). Quale strada è possibile lo dice il bando.</p>
+        <div class="strade">
+          <article class="strada rivela" aria-labelledby="strada-subappalto">
+            <h3 id="strada-subappalto">Subappalto <small>Art. 119</small></h3>
+            <dl>
+              <div><dt>Cosa fai</dt><dd>Affidi una parte dei lavori a un'impresa qualificata.</dd></div>
+              <div><dt>Chi esegue</dt><dd>Il subappaltatore.</dd></div>
+              <div><dt>Cosa serve in gara</dt><dd>Indichi in offerta le lavorazioni da subappaltare.</dd></div>
+              <div><dt>Dopo l'aggiudicazione</dt><dd>Depositi il contratto e aspetti l'autorizzazione.</dd></div>
+              <div><dt>Chi risponde</dt><dd>Tu e il subappaltatore, in solido.</dd></div>
+            </dl>
+          </article>
+          <article class="strada rivela" aria-labelledby="strada-avvalimento">
+            <h3 id="strada-avvalimento">Avvalimento <small>Art. 104</small></h3>
+            <dl>
+              <div><dt>Cosa fai</dt><dd>Usi i requisiti di un'altra impresa, l'ausiliaria, che ti mette a disposizione le sue risorse.</dd></div>
+              <div><dt>Chi esegue</dt><dd>Tu, con le risorse dell'ausiliaria. Se il lavoro richiede un'abilitazione che ha solo lei, esegue lei.</dd></div>
+              <div><dt>Cosa serve in gara</dt><dd>Alleghi il contratto di avvalimento, scritto, e l'attestazione SOA dell'ausiliaria.</dd></div>
+              <div><dt>Dopo l'aggiudicazione</dt><dd>Il RUP controlla in cantiere che le risorse dell'ausiliaria siano usate davvero.</dd></div>
+              <div><dt>Chi risponde</dt><dd>Tu e l'ausiliaria, in solido.</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="risorsa__blocco" aria-labelledby="esempio-titolo">
+      <div class="contenitore">
+        <div class="esempio-risorsa rivela">
+          <div class="esempio-risorsa__testo">
+            <h2 class="risorsa__titolo" id="esempio-titolo">Frontius te lo dice prima dell'offerta</h2>
+            <p>Confronta le categorie del bando con la tua attestazione e ti segnala cosa manca.</p>
+            <p class="in-arrivo"><span class="in-arrivo__etichetta">In arrivo</span><span>Ti proporrà anche imprese qualificate in quella categoria, vicino al cantiere.</span></p>
+            <a class="collegamento" href="index.html#inizio">Guarda la scheda della gara</a>
+          </div>
+          <article class="finestra esempio-risorsa__scheda" aria-label="Esempio di segnalazione nella scheda della gara">
+            <div class="finestra__barra">
+              <span class="finestra__punti" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="etichetta">Esempio</span>
+            </div>
+            <div class="esempio-risorsa__corpo">
+              <p class="esempio-risorsa__gara"><b>Strade comunali, lotto 2</b> · Comune di Valdoria</p>
+              <p class="motivo"><span class="simbolo simbolo--verifica" aria-hidden="true">!</span><span>Da verificare: non hai la OS10 (segnaletica). Puoi coprirla con subappalto, avvalimento o raggruppamento: dipende dal bando.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="risorsa__blocco" aria-labelledby="domande-subappalto">
+      <div class="contenitore contenitore--testo">
+        <h2 class="risorsa__titolo" id="domande-subappalto">Domande sul subappalto</h2>
+        <div class="domande">
+          <details class="domanda">
+            <summary>C'è un limite massimo al subappalto?</summary>
+            <p>Il Codice non fissa una percentuale uguale per tutte le gare. È la stazione appaltante a indicare nel bando, con una motivazione, le prestazioni da eseguire direttamente (art. 119, c. 2).</p>
+          </details>
+          <details class="domanda">
+            <summary>Devo indicare il nome del subappaltatore in offerta?</summary>
+            <p>Il Codice chiede di indicare le lavorazioni. Il contratto con il subappaltatore lo depositi dopo, almeno 20 giorni prima dei lavori (art. 119, c. 4 e 5). Controlla comunque cosa chiede il bando.</p>
+          </details>
+          <details class="domanda">
+            <summary>Il subappaltatore può subappaltare a sua volta?</summary>
+            <p>Sì, con le stesse regole. Il bando può escludere alcune prestazioni, per esempio per i controlli di cantiere e la tutela dei lavoratori (art. 119, c. 17).</p>
+          </details>
+          <details class="domanda">
+            <summary>Posso chiedere un ribasso al subappaltatore?</summary>
+            <p>Non sui costi della sicurezza e della manodopera: vanno pagati senza ribasso. Il subappaltatore deve garantire gli stessi standard di qualità e un trattamento dei lavoratori non inferiore (art. 119, c. 12).</p>
+          </details>
+          <details class="domanda">
+            <summary>Cosa rischio se subappalto senza autorizzazione?</summary>
+            <p>È un reato: lo prevede l'art. 21 della legge 646/1982.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="altre" aria-labelledby="altre-titolo">
+      <div class="contenitore">
+        <h2 class="altre__titolo" id="altre-titolo">Altre risorse</h2>
+        <ul class="altre__lista">
+          <li><a class="altre__voce" href="normativa.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12.5h7M9 16.5h7"/></svg>
+            <b>Normativa per le gare</b>
+            <span>Gli articoli del Codice che contano quando fai un'offerta</span>
+          </a></li>
+          <li><a class="altre__voce" href="glossario.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19M9 7.5h6"/></svg>
+            <b>Glossario</b>
+            <span>Le parole dei bandi, spiegate in breve</span>
+          </a></li>
+          <li><a class="altre__voce" href="categorie-soa.html">
+            <svg class="altre__icona" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><path d="M17 13.5v7M13.5 17h7"/></svg>
+            <b>Categorie SOA</b>
+            <span>Categorie, classifiche e quale ti serve</span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+        <section class="invito" aria-labelledby="invito-titolo">
+      <div class="contenitore">
+        <div class="invito__riquadro rivela">
+          <h2 id="invito-titolo">Scopri quali gare sono adatte alla tua impresa.</h2>
+          <p>Un team di agenti AI legge bandi e capitolati, sceglie le gare adatte alla tua impresa e prepara le bozze dell'offerta. Tu controlli e decidi.</p>
+          <a class="pulsante invito__pulsante" href="index.html#demo">Richiedi una demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="piede">
+    <div class="contenitore">
+      <div class="piede__colonne">
+        <div class="piede__marchio">
+          <a class="logo piede__logo" href="index.html" aria-label="Frontius, vai alla Home">
+          <svg viewBox="0 0 1765 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frontius">
+          <path fill="#0F172A" d="M2 3H265L228 77H200C192 52 168 32 140 32C100 32 70 56 70 96V160H125C110 160 98 174 98 192V254H106V267H2V254H10V16H2Z"/>
+          <path fill="#6366F1" d="M70 113H208L184 160H70Z"/>
+          <text x="295" y="250" textLength="1465" lengthAdjust="spacing" fill="#0F172A" font-family="Montserrat" font-weight="700" font-size="245">FRONTIUS</text>
+        </svg>
+
+          </a>
+          
+          
+        </div>
+        <nav class="piede__colonna" aria-labelledby="piede-menu">
+          <h2 class="piede__titolo" id="piede-menu">Menu</h2>
+          <ul>
+            <li><a href="index.html#scheda">La scheda della gara</a></li>
+            <li><a href="index.html#come-funziona">Come funziona</a></li>
+            <li><a href="index.html#ribasso">Ribasso e costi</a></li>
+            <li><a href="index.html#domande">Domande</a></li>
+            <li><a href="index.html#demo">Richiedi una demo</a></li>
+          </ul>
+        </nav>
+        <nav class="piede__colonna" aria-labelledby="piede-risorse">
+          <h2 class="piede__titolo" id="piede-risorse">Risorse</h2>
+          <ul>
+            <li><a href="subappalto.html" data-voce="subappalto" aria-current="page">Subappalto</a></li>
+            <li><a href="normativa.html" data-voce="normativa">Normativa per le gare</a></li>
+            <li><a href="glossario.html" data-voce="glossario">Glossario</a></li>
+            <li><a href="categorie-soa.html" data-voce="categorie-soa">Categorie SOA</a></li>
+          </ul>
+        </nav>
+        
+        <div class="piede__colonna">
+          <h2 class="piede__titolo">Note legali</h2>
+          <ul>
+            <li><a href="privacy.html" target="_blank" rel="noopener">Informativa privacy</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <p class="piede__fondo">© 2026 Frontius</p>
+    </div>
+  </footer>
+
+  <aside class="barra-mobile" aria-label="Richiedi una demo">
+    <a class="pulsante pulsante--pieno" href="index.html#demo">Richiedi una demo</a>
+    
+  </aside>
+
+
+</body>
+</html>
